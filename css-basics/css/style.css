@@ -1,13 +1,100 @@
-body{
-    text-align: center;
+/* Universal selector - every element at once */
+/*
+*{
+    margin: 0;
+    padding: 0;
+    color: red;
+}*/
+
+/* Element selector = type selector*/
+p{
+    color: olive;
+    font-size: 26px;
+}
+
+footer{
+    background-color: lightcoral;
 }
 
 header{
     background-color: orange;
 }
-h1{
-    font-size: 90px;
+
+header p {
+    background-color: snow;
+    border-bottom:1px solid gray ;
 }
-p{
-    font-size: 20px;
+
+a:link{
+    color: darkblue;
+    background-color: peachpuff;
+    text-decoration: none;
+}
+
+a:visited{
+    color: seagreen;
+}
+
+a:hover{
+    text-decoration:underline ;
+}
+
+img:hover{
+    border: 8px solid blue;
+    border-radius: 8px;
+}
+
+a:focus{
+    color: white;
+    background-color: orange;
+}
+
+/* ID Selector -> one ID / element but 1 element can have multiple ID's */
+#education{
+    border: 3px solid red;
+}
+
+ol li{
+    letter-spacing: 3px;
+    color: tomato;
+}
+
+ol li:first-child{
+    font-weight: bold;
+}
+
+ul li{
+    list-style: none;
+}
+
+#education h3{
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+#skills-list{
+    background-color: aliceblue;
+    padding: 36px;
+}
+
+.top-skill{
+    font-weight: bold;
+    background-color: teal;
+    color: papayawhip;
+}
+
+.date{
+    border: 2px solid steelblue;
+    border-radius: 12px;
+    padding: 6px;
+}
+
+.special{
+    text-transform: uppercase;
+    background-color: papayawhip;
+}
+
+#proud{
+    font-size: 48px;
+    background-color: firebrick;
 }
