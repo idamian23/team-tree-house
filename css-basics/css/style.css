@@ -43,7 +43,7 @@ img:hover{
     border: 8px solid blue;
     border-radius: 8px;
 }
-
+/* Turn links white with an orange background when they receive focus */
 a:focus{
     color: white;
     background-color: orange;
