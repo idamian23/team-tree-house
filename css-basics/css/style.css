@@ -7,6 +7,16 @@
 }*/
 
 /* Element selector = type selector*/
+
+hmtl{
+    font-size: 100%;  /*16px on most of the screens */
+}
+
+h1{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
 p{
     color: olive;
     font-size: 26px;
@@ -17,12 +27,23 @@ footer{
 }
 
 header{
-    background-color: orange;
+    background-color: #ff6600; /* same as #f60 */
+    width: 80%;
+    margin-left: 10%;
 }
 
 header p {
     background-color: snow;
     border-bottom:1px solid gray ;
+}
+
+#header-box{
+    width: 50%;
+    background-color: #33d549;
+}
+
+img{
+    width:100% ;
 }
 
 a:link{
@@ -45,8 +66,8 @@ img:hover{
 }
 /* Turn links white with an orange background when they receive focus */
 a:focus{
-    color: white;
-    background-color: orange;
+    color: rgb(255,255,255);
+    background-color: rgba(255,165,0,.5);
 }
 
 /* ID Selector -> one ID / element but 1 element can have multiple ID's */
@@ -70,6 +91,7 @@ ul li{
 #education h3{
     font-family: Arial, sans-serif;
     font-size: 32px;
+    background-color: rgb(150, 200, 250);
 }
 
 #skills-list{
