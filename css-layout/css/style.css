@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    height: 25vh;
+    background-color: #294969;
+    color: ghostwhite;
+    padding: 10px 15px;
+    border: 12px solid orange;
+    border-bottom-color: darkorange;
+    margin: 15px 5px;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+    border-bottom: 2px dotted #666;
+    background-color: azure;
+
+}
+
+footer{
+    width: 200px;
+    padding: 4px;
+    border:2px solid #ffa949;
+    margin: 30px auto 15px;
+    color: #294969;
+    font-size: .8rem;
+    text-align: center;
+}
+
+aside img, #bio{
+    width: 100%;
+    max-width: 720px;
+}
+
+#bio{
+    padding: 2rem;
+    border: 5px solid tomato;
+    background-color: mistyrose;
+}
