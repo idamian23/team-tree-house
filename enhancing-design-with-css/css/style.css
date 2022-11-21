@@ -13,7 +13,7 @@ html {
 }
 
 body{
-  margin: 20;
+  margin: 1rem;
   color: #454959;
   font: 300 100%/1.5 'Work Sans', sans-serif;
 }
@@ -57,7 +57,8 @@ img {
 header{
   padding: 10vh 1rem;
   margin: -1rem -1rem -1rem;
-  background-color: #f3753b;
+  background: url(../img/mountains.jpg) center / cover no-repeat #f3753b;
+  background-blend-mode: multiply;
   color: white;
 }
 
@@ -69,7 +70,14 @@ header, footer{
   letter-spacing: 1px;
 }
 
+section{
+  padding: 4rem 0;
+  border-bottom: 1px dashed #9599a9;
+}
+
 main{
+  max-width: 1000px;
+  margin: 0 auto;
   hyphens: auto;
 }
 
@@ -77,9 +85,10 @@ main{
   padding: 20% 15%;
   border-top: 12px solid #f3753b;
   border-radius: 12px 12px 0 0;
-  background-color: #454959;
+  background: url(../img/bear.jpg) center / cover #454959;
   color: white;
   box-shadow: inset 0 0 20px 10px rgba(0, 10, 20, .8);
+
 }
 
 #wildlife a{
@@ -93,11 +102,47 @@ main{
   border-radius: 20px/10px;
   margin: 1rem auto;
   box-shadow: 1px 2px 3px rgba(0, 10, 30, .5);
-  background-color: #cc4e13;
+  background-image: linear-gradient(135deg, rgba(255,255,225,.8) 0%, rgba(255,100,50,.2) 50%), linear-gradient(#b40 0%, #d63 50%, #c51 51%, #e74 100% ) ;
   color: white;
   text-align: center;
   font-size: 1.2rem;
 }
 
+.column:first-child{
+  margin-bottom: 4rem;
+}
+
 /* Media Queries ------------------- */
 
+@media screen and (min-width:720px){
+  header{
+    padding: 20vh 1rem;
+  }
+
+  h1{
+    font-size: 5rem;
+  }
+
+  h1::after{
+    margin-top: 1rem;
+  }
+
+  .title{
+    font-size: 1.25rem;
+  }
+
+  .intro{
+    padding: 0 15%;
+    font-size: 1.5rem;
+  }
+  .column{
+    display: inline-block;
+    width: 48%;
+    margin-right: -4px;
+  }
+
+  .column:first-child{
+    margin-right: calc(4% - -4px);
+    margin-bottom: 0;
+  }
+}
