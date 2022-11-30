@@ -18,6 +18,66 @@
         />
     </head>
     <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+                <a
+                    class="navbar-brand order-1 mr-0"
+                    href="https://www.teamtreehouse.com"
+                    target="_blank"
+                    >Presented by Treehouse</a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#home"
+                            >Home <span class="sr-only">(current)</span></a
+                        >
+                        <a class="nav-item nav-link" href="#about">About</a>
+                        <a class="nav-item nav-link" href="#speakers"
+                            >Speakers</a
+                        >
+                        <a class="nav-item nav-link" href="#schedule"
+                            >Schedule</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- /navbar -->
+
+        <!-- jumbotron -->
+        <div class="jumbotron jumbotron-fluid bg-info text-white">
+            <div class="container text-sm-center pt-5">
+                <h1 class="display-2">Full Stack Conf</h1>
+                <p class="lead">
+                    A One-day Conference about All Things JavaScript!!!
+                </p>
+                <div
+                    class="btn-group mt-4"
+                    role="group"
+                    aria-label="Callout buttons"
+                >
+                    <button type="button" class="btn btn-primary btn-lg">
+                        Register now!
+                    </button>
+                    <a class="btn btn-light btn-lg" href="#speakers">
+                        See Speakers
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /jumbotron -->
         <div class="container pt-4">
             <!-- ABOUT -->
             <div class="row">
@@ -75,14 +135,138 @@
             </div>
             <!-- /ABOUT -->
             <!-- speakers -->
-            <h1 class="display-4 text-center my-5 text-muted">Speakers</h1>
-            [Speaker bio go here]
+            <h1 id="speakers" class="display-4 text-center my-5 text-muted">
+                Speakers
+            </h1>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="width: 18rem">
+                        <img
+                            class="card-img-top"
+                            src="img/vivianne.png"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <h4 class="card-title">Vivianne McVue</h4>
+                            <p class="card-text">
+                                Vivianne is a web developer and teacher who is
+                                passionate about building scalable, data-driven
+                                web apps, especially ones that address old
+                                problems with new tech!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card" style="width: 18rem">
+                        <img
+                            class="card-img-top"
+                            src="img/nodestradamus.png"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <h4 class="card-title">Robbie Redux</h4>
+                            <p class="card-text">
+                                Robbie is a JavaScript developer working on
+                                large-scale applications. He's also a teacher
+                                who strives to support students in removing
+                                barriers to learning code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card" style="width: 18rem">
+                        <img
+                            class="card-img-top"
+                            src="..."
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <h4 class="card-title">Ecma Scriptnstuff</h4>
+                            <p class="card-text">
+                                Ecma found her passion for programming and
+                                teaching over 15 years ago. She is excited to
+                                introduce you to all of the wonders of
+                                JavaScript.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card" style="width: 18rem">
+                        <img
+                            class="card-img-top"
+                            src="..."
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <h4 class="card-title">Jay Query</h4>
+                            <p class="card-text">
+                                Jay is a developer, author of CSS: The Missing
+                                Manual, JavaScript &amp; jQuery: The Missing
+                                Manual, and web development teacher.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card" style="width: 18rem">
+                        <img
+                            class="card-img-top"
+                            src="..."
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <h4 class="card-title">Vivianne McVue</h4>
+                            <p class="card-text">
+                                Vivianne is a web developer and teacher who is
+                                passionate about building scalable, data-driven
+                                web apps, especially ones that address old
+                                problems with new tech!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card" style="width: 18rem">
+                        <img
+                            class="card-img-top"
+                            src="..."
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <h4 class="card-title">Json Babel</h4>
+                            <p class="card-text">
+                                All of his professional life, Json has worked
+                                with computers online; he is a polyglot
+                                programmer and likes using the right tools for
+                                the job.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- /speakers -->
 
             <!-- schedule -->
             <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
             [Conference shedule here]
             <!-- /shedule -->
+
+            <!-- callout button -->
+            <button
+                type="button"
+                class="btn btn-outline-info btn-lg d-block mx-auto my-5"
+            >
+                Don't miss out! Register Now!
+            </button>
         </div>
 
         <!-- signup form -->
@@ -114,6 +298,51 @@
         </div>
         <hr />
         <!-- /signup form -->
+        <!-- footer -->
+        <div class="row py-3">
+            <div class="col-md-7">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tracks</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="btn-group dropup">
+                            <button
+                                type="button"
+                                class="btn btn-outline-secondary"
+                            >
+                                Other Confs
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">CSS Conf</a>
+                                <a class="dropdown-item" href="#"
+                                    >Python Conf</a
+                                >
+                                <a class="dropdown-item" href="#">Java Conf</a>
+
+                                <a class="dropdown-item" href="#">Swift Conf</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md text-md-right">
+                <small>&copy; 2017 Full Stack Conf &amp; Treehouse</small>
+            </div>
+        </div>
+        <!-- /footer -->
         <!-- /CONTAINER -->
 
         <!-- Optional JavaScript -->
