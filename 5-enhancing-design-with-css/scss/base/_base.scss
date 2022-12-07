@@ -1,0 +1,48 @@
+/* Base Styles --------------------- */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 1.25em; /* 20px on most screens */
+}
+
+body {
+    margin: 1rem;
+    color: #454959;
+    font: 300 100%/1.5 'Work Sans', sans-serif;
+}
+
+a {
+    color: #cc4e13;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: 'Abolition Regular', Impact, Charcoal, sans-serif;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+h1,
+h2 {
+    font: 400 4rem/1.1 'Abolition Regular', Impact, Charcoal, sans-serif;
+}
+
+h1 {
+    text-shadow: 1px 2px 3px rgba(0, 10, 30, 0.5);
+}
+
+h1::after {
+    content: '\2193';
+    display: block;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+img {
+    width: 100%; /* responsive images */
+    border-radius: 10px;
+}
